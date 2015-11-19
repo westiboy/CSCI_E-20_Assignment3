@@ -143,3 +143,8 @@ div > legend {
 	border: none;
 	background-color: transparent;
 }
+#schimg {
+	max-width: 200px;
+	max-height: 200px;
+	padding: 10px;
+}
