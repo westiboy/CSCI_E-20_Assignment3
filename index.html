@@ -40,9 +40,14 @@
 		    <fieldset>
 		    	<legend>School and class data (for later reference)</legend>
 		    	<label for="school">School name (e.g. Harvard Extension School)</label>
-		    	<input type="text" id="school" name="school" autocomplete="on">
-			    <img src="schsrc" id="schimg">
-			    <br>
+		    	<select id="school">
+		    		<option checked>Select a school from the list</option>
+		    		<option value="HES">Harvard Extension School</option>
+		    		<option value="SEAS">School for Engineering and Applied Sciences</option>
+		    		<option value="GSE">Graduate Schol of Education</option>
+			    </select>
+			    	<img src="http://lorempixel.com/200/200/cats/" id="schimg">
+			    	
 			    <label for="department">Class department (eg CSCI)</label>
 		    	<input type="text" id="department" autocomplete="on" name="department">
 		    	
