@@ -5,6 +5,7 @@ $(document).ready(function(){
 	var schArray = ["Harvard Extension School", "School for Engineering and Applied Sciences", "Graduate Schol of Education"];
 	var crestArray = ["https://en.wikipedia.org/wiki/Harvard_Extension_School#/media/File:ExtensionFlag.png", "https://en.wikipedia.org/wiki/Harvard_John_A._Paulson_School_of_Engineering_and_Applied_Sciences#/media/File:HSEAS_Seal_New.png", "https://en.wikipedia.org/wiki/Harvard_Graduate_School_of_Education#/media/File:Harvard_shield-Education.png"];	
 
+	//interactive feature 1
 	$('#school').change(function(){
 		var school = $('#school').val();
 		var schimg;
@@ -23,7 +24,21 @@ $(document).ready(function(){
 		} //end switch
 		$('#schimg').attr("src",schimg);
 	}); //end school focusout
-	
+
+	//interactive feature 2
+	$('#item').focusout(function(event){
+		if ($('#item').val().length == 0) {
+			$('#item').attr({
+				class: 'fail'
+			}); //end item attr
+			event.preventDefault();
+		} else {
+			$('#item').attr({
+				class: 'none'
+			}); //end item attr else
+		}
+	}); // end item focusout
+
 
 }); //end ready
 

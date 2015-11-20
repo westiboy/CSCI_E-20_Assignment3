@@ -148,3 +148,7 @@ div > legend {
 	max-height: 200px;
 	padding: 10px;
 }
+.fail {
+	color: red;
+	border: solid 3px red;
+}
