@@ -26,7 +26,16 @@
 
 				<div id="rightbox" class="box">
 			    	<legend for="definition">Personal written definition</legend>
-			    	<p id="definition"><span class="floatleft">D</span>escribes specified type of input in an HTML form</p>
+			    	<form id="definition">
+						<input type="radio" name="option0" value="0">Describes specified type of input in an HTML form
+						<br>
+						<input type="radio" name="option1" value="1">Completely wrong answer, that should be obvious, but...
+						<br>
+						<input type="radio" name="option2" value="2">A third, less correct, but not insane answer
+						<br>
+						<input type="radio" name="option3" value="3">Sopme final answer that could be legit, but isnt
+						<br>
+			    	</form>
 		    	</div>
 
 				<div id="centerbox" class="box">
@@ -39,5 +48,8 @@
 			</div>
 
 	</div>
+	<!-- javascript -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/assign3.js"></script>
 </body>
 </html>

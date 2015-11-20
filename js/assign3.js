@@ -39,6 +39,12 @@ $(document).ready(function(){
 		}
 	}); // end item focusout
 
+	//hide center box until selection clicked
+	$('#centerbox').hide();
+	$('#rightbox').on("click", function(event){
+		switch
+		$('#centerbox').show(500);
+	}); //end rightbox function
 
 }); //end ready
 
