@@ -26,14 +26,14 @@ $(document).ready(function(){
 	}); //end school focusout
 
 	//interactive feature 2
-	$('#item').focusout(function(event){
-		if ($('#item').val().length == 0) {
-			$('#item').attr({
+	$('#flashdata input').focusout(function(event){
+		if ($('input').val().length == 0) {
+			$('input').attr({
 				class: 'fail'
 			}); //end item attr
 			event.preventDefault();
 		} else {
-			$('#item').attr({
+			$('input').attr({
 				class: 'none'
 			}); //end item attr else
 		}
