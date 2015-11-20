@@ -27,13 +27,13 @@ $(document).ready(function(){
 
 	//interactive feature 2
 	$('#flashdata input').focusout(function(event){
-		if ($('input').val().length == 0) {
-			$('input').attr({
+		if ($(this).val().length == 0) {
+			$(this).attr({
 				class: 'fail'
 			}); //end item attr
 			event.preventDefault();
 		} else {
-			$('input').attr({
+			$(this).attr({
 				class: 'none'
 			}); //end item attr else
 		}
