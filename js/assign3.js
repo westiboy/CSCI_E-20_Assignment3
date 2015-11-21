@@ -41,10 +41,45 @@ $(document).ready(function(){
 
 	//hide center box until selection clicked
 	$('#centerbox').hide();
-	$('#rightbox').on("click", function(event){
-		switch
-		$('#centerbox').show(500);
-	}); //end rightbox function
+
+	$('input[type="radio"]').attr('checked', false);
+
+	$('#leftbox').hover(function(){
+		$(this).css("background-color", "pink")
+		$(this).css("font-weight", "bold")
+		}, function(){
+		$(this).css("font-weight", "normal")
+		$(this).css("background-color", "#FFCCFF")
+	}); //end hover function
+
+/*	$('input').hover(function(){
+		$(this).attr({
+			color: 'blue',
+			fontWeight: 'bold'
+		});
+	}); //end hover
+*/
+	$('input[type="radio"]').click(function(){
+		var button = $(this);
+		console.log(button);
+		var ans = $(this).val();
+		console.log(ans);
+		if (ans == 0){
+			$('#centerbox').show(500);
+			$('#definition').css('background-color', 'green');
+		} else if (ans > 0){
+			console.log($(this).val());
+			$('input[type="radio"]:checked').attr({
+				class: 'fail'
+			}); //end item attr
+		} else {
+			$('input[type="radio"]:checked').attr({
+				class: 'box'
+			}) // end this attr
+		}
+	}); //end radio click
+	//filter example
+	$('ul li').filter(':even').css('font-family', 'Impact, sans-serif');
 
 }); //end ready
 
