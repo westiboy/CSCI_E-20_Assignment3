@@ -52,13 +52,6 @@ $(document).ready(function(){
 		$(this).css("background-color", "#FFCCFF")
 	}); //end hover function
 
-/*	$('input').hover(function(){
-		$(this).attr({
-			color: 'blue',
-			fontWeight: 'bold'
-		});
-	}); //end hover
-*/
 	$('input[type="radio"]').click(function(){
 		var button = $(this);
 		console.log(button);
@@ -86,22 +79,7 @@ $(document).ready(function(){
 		$('.flashcard').clearCanvas();
 	}); //end clear flash
 
-	$('#FlashCanv3').drawText({
-		fillStyle: '#fff',
-		strokeStyle: '#000',
-		strokeWidth: 2,
-		x: 100,
-		y: 100,
-		fontSize: '32px',
-		fontFamily: 'Impact, sans-serif',
-		text: 'Input Types'
-	}); //end drawText
 
-	$('#FlashCanv1').drawImage({
-		source: 'http://lorempixel.com/200/200/cats/',
-		x: 365,
-		y: 260,
-	}); //end draw image
 }); //end ready
 
 
