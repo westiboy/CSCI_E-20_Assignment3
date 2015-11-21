@@ -80,7 +80,28 @@ $(document).ready(function(){
 	}); //end radio click
 	//filter example
 	$('ul li').filter(':even').css('font-family', 'Impact, sans-serif');
+	
+	//button to clear flashcards
+	$('#clearflash').click(function(){
+		$('.flashcard').clearCanvas();
+	}); //end clear flash
 
+	$('#FlashCanv3').drawText({
+		fillStyle: '#fff',
+		strokeStyle: '#000',
+		strokeWidth: 2,
+		x: 100,
+		y: 100,
+		fontSize: '32px',
+		fontFamily: 'Impact, sans-serif',
+		text: 'Input Types'
+	}); //end drawText
+
+	$('#FlashCanv1').drawImage({
+		source: 'http://lorempixel.com/200/200/cats/',
+		x: 365,
+		y: 260,
+	}); //end draw image
 }); //end ready
 
 

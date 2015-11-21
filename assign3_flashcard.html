@@ -22,23 +22,25 @@
 			<div class="boxwrapper">
 				<div id="leftbox" class="box">
 		    		<legend for="item">Word or phrase</legend>
-			    	<canvas width="640" height="432" id="FlashCanv1"></canvas>
+			    	<canvas class="flashcard" width="300" height="432" id="FlashCanv1" name="item"></canvas>
 		    	</div>
 
 				<div id="rightbox" class="box">
 			    	<legend for="definition">Personal written definition</legend>
-			    	<canvas width="640" height="432" id="FlashCanv1"></canvas>
+			    	<canvas class="flashcard" width="300" height="432" id="FlashCanv2" name="definition"></canvas>
 		    	</div>
 
-				<div id="centerbox" class="box">
-			    	<legend for="relation">Personal relation or use of said term or action</legend>
-			    	<canvas width="640" height="432" id="FlashCanv1"></canvas>
+				<div id="centerbox1" class="box">
+			    	<legend for="relation">Personal relation</legend>
+			    	<canvas class="flashcard" width="300" height="432" id="FlashCanv3" name="relation"></canvas>
 		    	</div>
 			</div>
 			<div>
 		    	<p><a id="itemurl" href="http://www.w3schools.com/html/html_form_input_types.asp" target="_blank">http://www.w3schools.com/html/html_form_input_types.asp</a></p>
 			</div>
-
 	</div>
+	<!-- javascript -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/assign3.js"></script>
 </body>
 </html>

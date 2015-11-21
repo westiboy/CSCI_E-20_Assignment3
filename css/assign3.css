@@ -129,6 +129,13 @@ p {
 	background-color: #FFCC99;
 	width: 32%;
 }
+#centerbox1 {
+	left: 1em;
+	top: -1em;
+	border: solid 2px red;
+	background-color: #FFCC99;
+	width: 32%;
+}
 #rightbox {
 	left: 1em;
 	top: -1em;
@@ -156,4 +163,8 @@ div > legend {
 flashdata input {
 	color: red;
 	border: solid 3px red;
+}
+flashcard {
+	background-color: white;
+	font-family: Impact, Helvetica, sans-serif;
 }
